@@ -29,6 +29,7 @@ public class AuthController {
 
     @PostMapping("/register")
     public ResponseEntity<Void> registerUser(@Valid @RequestBody RegisterUserRequestDto registerUserRequestDto){
+        log.info("register :{}", registerUserRequestDto);
         authService.registerUser(registerUserRequestDto);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }

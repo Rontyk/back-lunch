@@ -36,7 +36,8 @@ public class SecurityConfig {
             "/swagger-ui.html",
             "/actuator/prometheus",
 
-            "/auth/**"
+            "/auth/**",
+            //"**"
     };
 
     @Bean

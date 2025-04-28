@@ -28,6 +28,6 @@ services:
       DATABASE_USERNAME: user
       DATABASE_PASSWORD: 123
     ports:
-      - "8181:8181"
+      - "8080:8080"
     depends_on:
       - postgres

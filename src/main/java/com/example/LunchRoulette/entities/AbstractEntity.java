@@ -4,6 +4,8 @@ import com.example.LunchRoulette.config.converters.LocalDateTimeAttributeConvert
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

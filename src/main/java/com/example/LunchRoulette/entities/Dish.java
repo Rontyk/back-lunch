@@ -18,6 +18,11 @@ public class Dish extends AbstractEntity<Long>{
     private String name;
     private int price;
     private String imageUrl;
+    private String des;
+
+    @ManyToOne
+    @JoinColumn(name = "cuisine_id")
+    private Cuisine cuisine;
 
     @ManyToOne
     @JoinColumn(name = "restaurant_id")
